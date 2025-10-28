@@ -24,7 +24,8 @@ while True:
         
             
     elif opcion == 4:
-        print("Saliendo del programa...")
+        print("Este ejercicio no es solo para programar: es para trabajar en equipo, coordinarse, revisar código y aprender de los errores. La clave no es hacerlo perfecto, sino **hacerlo juntos** y **entender cómo se arma un programa completo paso a paso.** 🚀")
+        print("\nSaliendo del programa...")
         break
     else:
         print("Opción no válida. Por favor, intenta de nuevo.")
