@@ -1,0 +1,5 @@
+print(f'Nombre: {nombre}')
+print(f'Edad: {edad}')
+print(f'Cargo: {cargo}')
+print(f'Salario: {sueldo_base}')
+print(f'bono: {bono}')
