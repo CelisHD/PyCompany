@@ -1,4 +1,7 @@
 import funciones
+import datos
+import bono
+import resumen
 
 # ---- Funciones principales del programa ---- 
 
@@ -21,11 +24,15 @@ while True:
     match opcion:
 
         case 1:
-            print("Opción 1 seleccionada: Registrar la información de un empleado.\n")
+            nombre, edad, cargo, sueldo_base, porcentaje_bono = datos.obtener_datos_usuario()
+            print(f"\nInformación del empleado {nombre} registrada con éxito.\n")
+
         case 2:
-            print("Opción 2 seleccionada: Calcular bono empleado.\n")
+            total = bono.calcular_bono(sueldo_base, porcentaje_bono)
+            print(f"\nEl salario total con bono es: {total}\n")
+
         case 3:
-            print("Opción 3 seleccionada: Mostrar el resumen del trabajador.\n")
+            resumen.mostrar_resumen(nombre, edad, cargo, sueldo_base, porcentaje_bono)
         
         case 4:
             print("Este ejercicio no es solo para programar: es para trabajar en equipo, coordinarse, revisar código y aprender de los errores. La clave no es hacerlo perfecto, sino **hacerlo juntos** y **entender cómo se arma un programa completo paso a paso.** 🚀")
